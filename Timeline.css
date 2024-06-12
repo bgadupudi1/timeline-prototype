@@ -1,0 +1,243 @@
+.timeline-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.displayFlex {
+    display: flex;
+}
+
+.search-bar input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 6px 12px;
+    font-size: 16px;
+    color: white;
+    background-color: #c4c8cb;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+.timeline {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin: 50px auto;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 75%;
+    height: 2px; /* increase or decrease width of line */
+    background-color: black;
+}
+
+.dot {
+    position: absolute;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #212529;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dot::before {
+    content: "";
+    width: 50%; /* Adjust size of the hole */
+    height: 50%; /* Adjust size of the hole */
+    background-color: white; /* Color of the hole */
+    border-radius: 50%;
+}
+
+.label {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    margin-top: 290%;
+}
+
+.newLine1 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 75%;
+    height: 2px;/* increase or decrease width of line */
+    background-color: black;
+    margin-top: 10%;
+}
+
+.newLine2 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 75%;
+    height: 2px;/* increase or decrease width of line */
+    background-color: black;
+    margin-top: 20%;
+}
+
+.newDot1 {
+    position: absolute;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #212529;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.newDot2 {
+    position: absolute;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #212529;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    margin-top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.newDot1::before {
+    content: "";
+    width: 50%; /* Adjust size of the hole */
+    height: 50%; /* Adjust size of the hole */
+    background-color: white; /* Color of the hole */
+    border-radius: 50%;
+}
+
+.newDot2::before {
+    content: "";
+    width: 50%; /* Adjust size of the hole */
+    height: 50%; /* Adjust size of the hole */
+    background-color: white; /* Color of the hole */
+    border-radius: 50%;
+}
+
+
+.connector-vertical {
+    position: absolute;
+    width: 200px; /* Adjust width to control horizontal part of the curve */
+    height: 120px; /* Adjust height to control vertical part of the curve */
+    border: 2px solid black;
+    border-color: black transparent transparent transparent;
+    border-radius: 50%/100px 100px 0 0;
+    top: 10px; /* Adjust to position correctly */
+    left: -100%;
+    transform: translateX(-50%) rotate(90deg);
+    margin-top: 50%;
+}
+
+.connector-vertical1 {
+    position: absolute;
+    width: 200px; /* Adjust width to control horizontal part of the curve */
+    height: 120px; /* Adjust height to control vertical part of the curve */
+    border: 2px solid black;
+    border-color: black transparent transparent transparent;
+    border-radius: 50%/100px 100px 0 0;
+    top: -128px; /* Adjust to position correctly */
+    left: 200%;
+    transform: translateX(-50%) rotate(270deg);
+    margin-top: 50%;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.google-logo {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px; /* Adjust spacing as needed */
+}
+
+.search-bar {
+    flex: 1;
+    margin-right: 10px; /* Adjust spacing as needed */
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4285F4; /* Example button color */
+    border: none;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search-button .search-icon {
+    width: 16px;
+    height: 16px;
+    background-image: url("C:\Users\bhava\Downloads\search-solid.svg"); /* Replace with your search icon path */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.popover {
+    max-width: 600px; /* Adjust the max-width as needed */
+    width: 200px; /* Ensure width is auto to allow max-width to take effect */
+    height: 200px;
+}
+.popover-header {
+    font-size: 1.2em; /* Adjust font size if needed */
+}
+.popover-body {
+    font-size: 0.9em; /* Adjust font size if needed */
+    padding: 45px;
+}
+
+.popover-image {
+    width: 100px;
+    height: auto;
+    margin-top: -30px;
+}
